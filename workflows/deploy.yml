@@ -1,0 +1,24 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ] # Only trigger on pushes to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install and Build
+      run: |
+        npm install
+        npm run build
+
+    - name: Deploy
+      uses: actions/github-pages@v4
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build # Path to your built files
