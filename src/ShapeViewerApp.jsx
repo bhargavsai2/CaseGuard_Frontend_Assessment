@@ -72,7 +72,7 @@ function ShapeViewerApp() {
             </div>
           ))}
           </>
-        )};
+        )}
         </div>
         <div className="shape-viewport">
           <ShapeRenderer shapes={shapes} />
