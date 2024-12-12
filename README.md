@@ -1,7 +1,3 @@
-Here is a sample README file you can use for your submission:
-
----
-
 # Shape Viewer Application
 
 ## Overview
