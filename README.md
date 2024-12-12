@@ -107,5 +107,4 @@ Here's the updated README with a section for **Further Enhancements and Optimiza
 8. **Mobile and Touchscreen Optimization**:
    - Adapt the UI and interactions for touch-based devices, including gesture support for zooming and panning.
 
----
 
